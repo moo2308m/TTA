@@ -13,7 +13,7 @@
     #bg-canvas { position: fixed; top: 0; bottom: 0; left: 0; right: 0; width: 100vw; height: 100vh; background: black; z-index: -9999; opacity: 1; transition: opacity 1.5s ease-out; }
     .h1 { display: block; margin-top: 1em; font-size: 20px; font-weight: bold; background-color: rgba(51, 51, 51, 0.4); max-width: fit-content; padding: 0.5em 1em 0.5em 1em; border-radius: 2em; }
     .h2 { display: block; margin-top: 1em; font-size: 15px; font-weight: bold; background-color: rgba(51, 51, 51, 0.4); max-width: fit-content; padding: 0.5em 1em 0.5em 1.75em; border-radius: 2em; }
-    #back-button { display: block; margin-top: 1em; margin-left: auto; margin-right: 2em; background-color: rgba(51, 51, 51, 0.4); font-weight: bold; border: none; border-radius: 2em; padding: 0.5em 1em 0.5em 1em; color: white; }
+    #back-button { display: block; margin-top: 1em; margin-left: auto; margin-right: 1em; background-color: rgba(51, 51, 51, 0.4); font-weight: bold; border: none; border-radius: 2em; padding: 0.5em 1em 0.5em 1em; color: white; font-size: 1.2em; font-family: comic sans ms; }
   </style>
   <script>
     window.MathJax = { 
@@ -28,6 +28,7 @@
   <canvas id="bg-canvas"></canvas>
   <a href="/">
   <button id="back-button">Back to Main Menu</button>
+  <link rel="icon" type="image/jpeg" href="/icon.jpg">
   </a>
   <span class="h1">Introduction</span>
   <span class="inline-math-block">$COWWD(n)$ is a user-made computable function, made by me, mainly because I like graph minors a lot and I wanted to see how far I could take graph minors before they just become useless. It's a fast growing function and it uses a lot of graph minors, iterated graph minors, and is also bounded by the Extended Rathjen ordinal system ($\Psi_0(\chi_K(M))$). A graph minor is a finite sequence of graphs that's constrained by vertices or edges, based off of the Robertson-Seymour graph minor theorem, and an iterated graph minor is a version of a graph minor that's iterated $var$ times ($IGM^{var}(n)$). It's inspired off of $SCG(n)$, so of course it grows fast.</span>
