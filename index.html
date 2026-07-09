@@ -6,17 +6,17 @@
   <title>The Transfinite Archive - Homepage</title>
   <link rel="icon" type="image/png" href="tta-icon.png">
   <style>
-    * { -webkit-tap-highlight-color: transparent; cursor: pointer; text-decoration: none; }
+    * { -webkit-tap-highlight-color: transparent; text-decoration: none; }
     body { margin: 0; overflow: hidden; background: black; font-family: monospace; touch-action: none; user-select: none; justify-content: center; min-height: 100vh; max-height: 100vh; }
     #title-container { -webkit-tap-highlight-color: transparent; cursor: pointer; display: block; background-color: rgba(34, 34, 34, 0.4); border-radius: 3em; padding: 1em 3em 1em 3em; max-width: fit-content; margin: 1em auto 0 auto; transform: translateY(0); transition: transform 0.8s ease-out; }
     #title { display: block; font-size: 3em; color: white; text-align: center; opacity: 0.4; transition: opacity 0.3s ease-in-out; }
     #title-container:hover #title { opacity: 1; }
-    #cowwd-btn, #sheeppd-btn { display: block; background-color: rgba(34, 34, 34, 0.4); border-radius: 2em; padding: 1.2em 1.2em 1.2em 1.2em; max-width: fit-content; margin: 2em auto 0 auto; transform: translateY(0); transition: transform 1s ease-out, background-color 0.3s ease-in-out; -webkit-tap-highlight-color: transparent; cursor: pointer; }
+    #cowwd-btn, #sheeppd-btn { display: inline-block; background-color: rgba(34, 34, 34, 0.4); border-radius: 2em; padding: 1.2em 1.2em 1.2em 1.2em; max-width: fit-content; margin: 2em auto 0 2em; transform: translateY(0); transition: transform 1s ease-out, background-color 0.3s ease-in-out; cursor: pointer; }
     #cowwd-btn:hover, #sheeppd-btn:hover { background-color: rgba(50, 50, 50, 0.6); }
     #btn-text { display: block; font-size: 1.5em; color: white; text-align: center; opacity: 0.4; transition: opacity 0.3s ease-in-out; }
-    #cowwd-btn:hover #btn-text, #sheeppd-btn:hover { opacity: 1; }
+    #cowwd-btn:hover #btn-text, #sheeppd-btn:hover #btn-text { opacity: 1; }
     #bg-canvas { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100vw; height: 100vh; background: black; z-index: -9999; opacity: 1; transition: opacity 1.5s ease-out; }
-    @starting-style { #title-container { transform: translateY(10em); } #title { opacity: 0; } #cowwd-btn { transform: translateY(14em); } #sheeppd-btn { transform: translateY(18); } #btn-text { opacity: 0; } #bg-canvas { opacity: 0; }}
+    @starting-style { #title-container { transform: translateY(10em); } #title { opacity: 0; } #cowwd-btn { transform: translateY(14em); } #sheeppd-btn { transform: translateY(18em); } #btn-text { opacity: 0; } #bg-canvas { opacity: 0; }}
   </style>
 </head>
 <body>
