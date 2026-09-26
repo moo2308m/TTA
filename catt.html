@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>The Transfinite Archive - CATT</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50%' y='68%' font-size='36' font-family='monospace' font-weight='bold' text-anchor='middle' fill='white'>C%28n%29</text></svg>">
+  <link rel="icon" type="image/png" href="tta-icon.png">
   <style>
     html { scroll-behavior: smooth; }
     * { -webkit-tap-highlight-color: transparent; text-decoration: none; }
@@ -53,7 +53,7 @@
   <span class="inline-math-block">You start off at position (0, 0) on the grid, which is the bottom-left corner. Your goal is to get to the top-right corner in the least amount of steps. Each time you go diagonally, that counts as only one step, not two. This would seem simple, but every grid space has a trapdoor. Under these trapdoors are spikes, where if you touch a spike, you have to restart. The trapdoors aren't activated until you touch the grid space. The chance of a single trapdoor opening under you is $Trap_{chance}$. That means $Total_{chance}$ is equal to the chance that you survive the whole grid, which is so close to zero that I won't try to explain it. And the result of the function, $CATT(n)$, equals $1 / Total_{chance}$, which yields a very large number.</span>
 
   <span class="h1">Factorials</span>
-  <span class="inline-math-block">Remember the factorials from earlier? I could have just thrown n!!!!! everywhere and called it a day, which, to be honest, was extremely tempting. But I don't want to pollute this site with random slop. I'll go into further detail here. That format, $n[!^{x}]$, is for readability, as n!!!... isn't nearly as readable and efficient (kinda like the FGH. You just change the subscript to a higher number instead of adding another up arrow). Let's use $n = 3$ for these upcoming examples. For $3!$, that's standard factorials, which equals $6$.</span>
+  <span class="inline-math-block">Remember the factorials from earlier? I could have just thrown n!!!!! everywhere and called it a day, which, to be honest, was extremely tempting. But I don't want to pollute this site with random slop. I'll go into further detail here. That format, $n[!^{x}]$, is for readability, as n!!!... isn't nearly as readable and efficient (kinda like the FGH. You just change the subscript to a higher number instead of adding another up arrow). Let's use $n = 3$ for these upcoming examples. For $3!$, that's standard factorials, which equals $6$. $3!!$, however, is equal to $3^{2^{1}}$, which is $9$. Still not high for a low value like $3$, but it grows really fast. Then comes $3!!!$, which is equal to $3 ↑↑ (2 ↑↑ 1)$, which is $27$. Still not all that big, but it grows way faster now. $3!!!!$ is equal to $3 ↑↑↑ (2 ↑↑↑ 1)$, which equals $7,625,597,484,987$. That's a giant leap from $3!!!$, but still not that big. $3!!!!!$, however, is equal to $3 ↑↑↑↑ (2 ↑↑↑↑ 1)$, which equals $3 ↑↑ 7,625,597,484,987$, which is way bigger. This is the best part about my factorial engine, because you can always just increase the number in $n[!^{x}]$, and get a way bigger number. Not quite as explosive as $IGM^{x}(n)$, but still very explosive.</span>
 
   <span class="h1">The rules</span>
   <span class="h2">
