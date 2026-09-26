@@ -40,7 +40,6 @@
   
   <span class="h1">The equation for $CATT(n)$</span>
   <span class="inline-math-block">
-  $Grid_{size} = IGM^{n[!^{5}]}(n[!^{5}])$ by $IGM^{n[!^{5}]}(n[!^{5}])$
   <br>
   $Trap_{chance} = 1 - (1 / n[!^{n}])^{GM(n)}$
   <br>
@@ -57,9 +56,15 @@
 
   <span class="h1">The rules</span>
   <span class="h2">
-  1. $n$ must be a positive integer.
+  1. $n$ has to be a positive integer. If the input, $n$, isn't an integer, the function terminates and results with $0$.
   <br>
   2. If there is any division by $0$, the entire function terminates and results with $0$.
+  <br>
+  3. The grid size, $Grid_{size}$, is a square, which is $N$ x $N$, where $N = IGM^{n[!^{5}]}(n[!^{5}])$.
+  <br>
+  4. $Grid_{size}$ can never change, unless you change the input.
+  <br>
+  5. $Survival_{chance}$ and $Trap_{chance}$ are for the indiviual tiles. They aren't for the whole grid.
   </span>
   
   <span class="h1">Usability</span>
