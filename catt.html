@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>The Transfinite Archive - CATT</title>
-  <link rel="icon" type="image/png" href="tta-icon.png">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50%' y='68%' font-size='36' font-family='monospace' font-weight='bold' text-anchor='middle' fill='white'>C%28n%29</text></svg>">
   <style>
     html { scroll-behavior: smooth; }
     * { -webkit-tap-highlight-color: transparent; text-decoration: none; }
@@ -36,7 +36,7 @@
   <span class="h1">Table of Contents</span>
   <div class="inline-math-block" id="dynamic-toc" style="line-height: 1.2em; scroll-margin-top: 1em;"></div>
   <span class="h1">Introduction</span>
-  <span class="inline-math-block">$CATT(n)$ is the third function in the animal series, and my first function that's actually inspired by something other than animals. $CATT(n)$ is oriented around graphs, just like $SHEEPPD(n)$. The function depends on graph minors, iterated graph minors, factorials, and is inspired from Chompstep in Geometry Dash. Graph minors are defined as $SCG(n)$, the point so where I don't have to constantly see $SCG(n)$ in my functions. $IGN^{x}(n)$ is the iterated graph minor. For example, $IGM^{4}(10)$ equals $GM(GM(GM(GM(10))))$. I created iterated graph minors for faster growth without complexity. Also, I'd like to define the $n[!^{x}]$ format. For example, $9[!^{1}]$ = $9!$. I made this format since I use a lot of factorial variants, like $n!!!!!$. $n!!$ is like factorials, but instead of multiplying the previous number, you exponentiate the previous number. For $n!!!$, you tetrate the previous number.</span>
+  <span class="inline-math-block">$CATT(n)$ is the third function in the animal series, my third ever function, and my first function inspired off of probability. $CATT(n)$ is oriented around graphs, just like $SHEEPPD(n)$. The function depends on graph minors, iterated graph minors, factorials, and is inspired from Chompstep in Geometry Dash. Graph minors are defined as $SCG(n)$, the point so where I don't have to constantly see $SCG(n)$ in my functions. $IGN^{x}(n)$ is the iterated graph minor. For example, $IGM^{4}(10)$ equals $GM(GM(GM(GM(10))))$. I created iterated graph minors for faster growth without complexity. Also, I'd like to define the $n[!^{x}]$ format. For example, $9[!^{1}]$ = $9!$. I made this format since I use a lot of factorial variants, like $n!!!!!$. $n!!$ is like factorials, but instead of multiplying the previous number, you exponentiate the previous number. For $n!!!$, you tetrate the previous number.</span>
   
   <span class="h1">The equation for $CATT(n)$</span>
   <span class="inline-math-block">
@@ -51,6 +51,9 @@
 
   <span class="h1">Explanation</span>
   <span class="inline-math-block">You start off at position (0, 0) on the grid, which is the bottom-left corner. Your goal is to get to the top-right corner in the least amount of steps. Each time you go diagonally, that counts as only one step, not two. This would seem simple, but every grid space has a trapdoor. Under these trapdoors are spikes, where if you touch a spike, you have to restart. The trapdoors aren't activated until you touch the grid space. The chance of a single trapdoor opening under you is $Trap_{chance}$. That means $Total_{chance}$ is equal to the chance that you survive the whole grid, which is so close to zero that I won't try to explain it. And the result of the function, $CATT(n)$, equals $1 / Total_{chance}$, which yields a very large number.</span>
+
+  <span class="h1">Factorials</span>
+  <span class="inline-math-block">Remember the factorials from earlier? I could have just thrown n!!!!! everywhere and called it a day, which, to be honest, was extremely tempting. But I don't want to pollute this site with random slop. I'll go into further detail here. That format, $n[!^{x}]$, is for readability, as n!!!... isn't nearly as readable and efficient (kinda like the FGH. You just change the subscript to a higher number instead of adding another up arrow). Let's use $n = 3$ for these upcoming examples. For $3!$, that's standard factorials, which equals $6$.</span>
 
   <span class="h1">The rules</span>
   <span class="h2">
