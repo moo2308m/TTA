@@ -38,11 +38,12 @@
   <span class="h1">Introduction</span>
   <span class="inline-math-block">$SHEEPPD(n)$ is a user made computable function, made by me. It's based off of graphs and graph theory and is the second function in the animal series. $SHEEPPD(n)$ equals the maximum length of a finite sequence of distinct straight line graph embeddings, $G_1, G_2, \dots, G_k$, drawn on a flat plane that satisfies the structural growth and coloring limits of the rules. Graph $G_i$ has a limit of $S$ vertices, lines, and colors. Since shapes are undefined in graph theory, a shape is a closed set of lines, with a minimum being 3 lines (a triangle), a shape signature is the unordered multiset of a shape's line colors, and a line is a link connecting 2 points or vertices together. Also, I'll be referencing a function called "$GM(n)$" later. $GM(n)$ means $\text{GraphMinor}(n)$ and has the exact same rules and structure as the $SCG(n)$ function.</span>
   
-  <span class="h1">The equation for $S$</span>
+  <span class="h1">The equation for $SHEEPPD(n)$</span>
   <span class="inline-math-block">$Z_S = n [\uparrow^{2^{10^{27^n}}}] n + 2^{10^{27}}$</span>
   <span class="inline-math-block">$E_S^1(x) = GM(x [\uparrow^{Z_S}] x)$</span>
   <span class="inline-math-block">For any value of k > 1: $E_S^k(x) = GM(E_S^{(k^x) - 1}(Z_S) [\uparrow^{k + 1}] E_S^{Z_S}(k - 1))$</span>
   <span class="inline-math-block">$S = E_S^{Z_S}(GM(Z_S [\uparrow^{Z_S}] Z_S))$</span>
+  <span class="inline-math-block">$SHEEPPD(n) = S$</span>
   <span class="h1">The rules</span>
   <span class="inline-math-block">There are some rules for $SHEEPPD(n)$:</span>
   <span class="h2">1. $n$ must be a positive integer.</span>
